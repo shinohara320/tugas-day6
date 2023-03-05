@@ -2,15 +2,15 @@ let datas = [];
 function getData(event) {
     event.preventDefault();
     
-    let title = document.getElementById('input-title').value;
-    let description = document.getElementById('input-description').value;
+    let title = document.getElementById('name').value;
+    let description = document.getElementById('description').value;
     let image = document.getElementById('input-image').files;
-    let start = document.getElementById('input-start').value;
-    let end = document.getElementById('input-end').value;
-    let nodejs = document.getElementById("node-js").checked == true ? `<img id="nodejs" src="./assets/images/icons/nodejs.png" style="width:15%; margin-right: 10px;">`: "";
-    let nextjs = document.getElementById("next-js").checked == true ? `<img id="nextjs" src="./assets/images/icons/nextjs.png"style="width:15%;margin-right: 10px;">` : "";
-    let reactjs = document.getElementById("react-js").checked == true ? `<img id="reactjs" src="./assets/images/icons/reactjs.png"style="width:15%;margin-right: 10px;">` : "";
-    let typerscript = document.getElementById("typescript").checked == true ? `<img id="typescript" src="./assets/images/icons/typescript.png" style="width:15%;margin-right: 10px;>"` : "";
+    let start = document.getElementById('input-date-start').value;
+    let end = document.getElementById('input-date-end').value;
+    let nodejs = document.getElementById("nodejs").checked == true ? `<img id="nodejs" src="./assets/images/icons/nodejs.png" style="width:10%; margin-right: 10px;">`: "";
+    let nextjs = document.getElementById("nextjs").checked == true ? `<img id="nextjs" src="./assets/images/icons/nextjs.png"style="width:10%;margin-right: 10px;">` : "";
+    let reactjs = document.getElementById("reactjs").checked == true ? `<img id="reactjs" src="./assets/images/icons/reactjs.png"style="width:10%;margin-right: 10px;">` : "";
+    let typerscript = document.getElementById("typescript").checked == true ? `<img id="typescript" src="./assets/images/icons/typescript.png" style="width:10%;margin-right: 10px;>"` : "";
     
     image  = URL.createObjectURL(image[0]);
     let data = {

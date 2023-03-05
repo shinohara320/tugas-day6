@@ -80,7 +80,6 @@ html, body{
     margin: 0;
 }
 /* index end */
-/* contactform */
 /* navbar */
 nav{
     display: flex;
@@ -110,6 +109,7 @@ nav{
 .nav-right{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .nav-right a{
     display: flex;
@@ -118,90 +118,31 @@ nav{
     background-color: #000;
     border-radius: 5px;
     padding: 8px 20px;
-    margin-right: 10px;
-}
-.hamburger-buttons button {
- 
+    margin-right: 30px;
 }
 /* navbar end */
-form{
-    width: 350px;
-    margin: 50px auto;
-    padding: 10px;
-}
-form div{
-    margin-top: 10px;
-}
-form div label{
-    font-weight: bold;
-    font-size: 20px;
-}
-input, select, textarea{
-    display: block;
-    width: 100%;
-    background-color: #fff;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 15px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px -7px gray
-}
-#subject{
-    width: 372px;
-}
-textarea{
-    resize: none;
-}
-    .contactBtn #contact button{
-        color: white;
-        background-color: #000;
-        padding: 10px 20px;
-        margin-top: 5px;
-        font-size: 15px;
-        border: 1px solid #000;
-        border-radius: 20px;
-        cursor: pointer;
-    }
-
-/* contact form */
-/* Hamburger start */
-.hamburger-nav-container {
-    font-size: 23px;
-    display: none;
-}
-
-.hamburger-nav-container .hamburger-active {
-    background-color: orangered;
-}
-
-.hamburger-nav-container a {
-    color: white;
-    background-color: #9a9a9a;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    border: 1px solid #fff;
-}
-#barsmenu {
-    display: none;
-}
-
-/* hamburger end */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 720px) {
     .nav-left ul li a{
         display: none;
     }
+    .nav-right a{
+        display: none;
+    }
+    .nav-right i{
+        margin-right: 20px ;
+    }
     html, body{
         height: 100%;
-        width: 375px;
+        width: 100%;
     }
     .card-container{
-        height: 700px;
-        width: 300px ;
+        height: 50%;
+        width: 500px ;
         display: flex;
+        justify-content: flex-start;
         flex-direction: column;
-        margin: 10px auto;
+        margin: 50px auto;
+        padding: 30px;
     }
     .article-container{
         padding-top: 10px;
@@ -216,19 +157,12 @@ textarea{
     .pic{
         height: 300px;
         width: 250px; 
-        margin: 0 auto;
-    }
-    form{
-        width: 300px;
-        margin: 10px auto;
-    }
-    #subject{
-        width: 322px;
+        margin: 50px auto;
     }
     #barsmenu {
         display: block;
     }
-    .nav-right a{
-        margin-right: 0;
+    .nav-right {
+        margin-right: 20px;
     }
 }
